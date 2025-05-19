@@ -1,0 +1,42 @@
+/* 0-styles.css */
+
+/* Basic reset and list styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 15px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('0-sprite.png');
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+/* Adjust background-position for each icon */
+.i-html {
+    background-position: 0 0;
+}
+
+.i-css {
+    background-position: -24px 0;
+}
+
+.i-js {
+    background-position: -48px 0;
+}
