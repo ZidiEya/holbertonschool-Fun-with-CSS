@@ -1,0 +1,35 @@
+/* 1-styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Underline effect */
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #007BFF;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
